@@ -39,17 +39,9 @@ async def help_user(bot, update):
 
 
 @Clinton.on_message(filters.private & filters.command(["start"]))
-async def start(bot, message):
+async def start(bot, update):
   await bot.send_message(
     chat_id=message.chat.id,
-    text=Translation.START_TEXT.format(message.from_user.mention),
-    reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton("ꜱᴜᴘᴘᴏʀᴛ", url="https://t.me/Groupdc"),
-                    InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇꜱ", url="https://t.me/Groupdcbots")
-                ]
-            ]
-        ),
+    text=Translation.START_TEXT,
     reply_to_message_id=update.message_id
   )
