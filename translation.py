@@ -1,5 +1,5 @@
 class Translation(object):
-    START_TEXT = """ʜɪ {}, 
+    START_TEXT = """ʜɪ ♨️, 
 ɪ'ᴍ ᴀʟʟ ᴜʀʟ ᴜᴘʟᴏᴀᴅᴇʀ! 
 ʏᴏᴜ ᴄᴀɴ ᴜᴘʟᴏᴀᴅ ꜰɪʟᴇ|ᴠɪᴅᴇᴏ ᴛᴏ ᴛᴇʟᴇɢʀᴀᴍ ᴡɪᴛʜ ᴅɪʀᴇᴄᴛ ʟɪɴᴋ, ᴜꜱɪɴɢ ᴛʜɪꜱ ʙᴏᴛ! 
 ꜱᴜᴘᴘᴏʀᴛ ꜱɪᴛᴇꜱ <a href="https://ytdl-org.github.io/youtube-dl/supportedsites.html">ʜᴇʀᴇ</a>
