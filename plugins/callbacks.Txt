@@ -13,11 +13,11 @@ from translation import Translation
 async def cb_handler(client: kinu, query: CallbackQuery):
     if query.data == "help_kt":
         buttons = [[
-            InlineKeyboardButton('Updates', url="https://t.me/TMWAD"),
-            InlineKeyboardButton('About', callback_data='about_kt')
+            InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇꜱ', url="https://t.me/groupdcbots"),
+            InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about_kt')
             ],[
-            InlineKeyboardButton('🏠 Home', callback_data='start_kt'),
-            InlineKeyboardButton('🔐 Close', callback_data='close_kt')
+            InlineKeyboardButton(' ʜᴏᴍᴇ', callback_data='start_kt'),
+            InlineKeyboardButton('ᴄʟᴏꜱᴇ', callback_data='close_kt')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -33,8 +33,8 @@ async def cb_handler(client: kinu, query: CallbackQuery):
        
     elif query.data == "start_kt":
         buttons = [[
-            InlineKeyboardButton('Help', callback_data='help_kt'),
-            InlineKeyboardButton('🤖 Updates', url="https://t.me/TMWAD")
+            InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help_kt'),
+            InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇꜱ', url="https://t.me/groupdcbots")
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -47,10 +47,10 @@ async def cb_handler(client: kinu, query: CallbackQuery):
        
     if query.data == "about_kt":
         buttons = [[
-            InlineKeyboardButton('🦸 Deverloper', url='https://github.com/kalanakt')
+            InlineKeyboardButton('ᴅᴇᴠ', url='https://t.me/selfiebd')
             ],[
-            InlineKeyboardButton('🏠 Home', callback_data='start_kt'),
-            InlineKeyboardButton('🔐 Close', callback_data='close_kt')
+            InlineKeyboardButton('ʜᴏᴍᴇ', callback_data='start_kt'),
+            InlineKeyboardButton('Close', callback_data='close_kt')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
